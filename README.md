@@ -2,7 +2,7 @@
 
 demo https://codepen.io/hsienhsiuliao/pen/gJRxvb
 
-#### built using React. 
+#### built using React
 
 User inputs search term which and presses enter to return results
 
