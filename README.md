@@ -4,7 +4,7 @@ demo https://codepen.io/hsienhsiuliao/pen/gJRxvb
 
 #### built using React
 
-User inputs search term which and presses enter to return results
+User inputs search term and presses enter to return results
 
 User inputs search term and clicks button to return results (in progress)
 
