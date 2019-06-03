@@ -50,7 +50,7 @@ class SearchComponent extends React.Component {
   }
   
   componentDidMount() {
-  //  console.log("did mount " , this.state.url);
+    console.log("did mount " , this.state.url);
     document.addEventListener("keydown", this.handleKeyPress);
   }
   
