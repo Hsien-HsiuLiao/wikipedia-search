@@ -50,7 +50,7 @@ class SearchComponent extends React.Component {
   }
   
   componentDidMount() {
-  //  console.log("did mount " , this.state.url);
+ 
     document.addEventListener("keydown", this.handleKeyPress);
   }
   
@@ -72,7 +72,7 @@ class SearchComponent extends React.Component {
     }
     
     $.getJSON(this.state.url, function(result){
-      console.log("getjson: ", result);
+      
       resultsFromWiki = result;
      
       }).then( () => {
@@ -90,7 +90,7 @@ class SearchComponent extends React.Component {
         })
         .then( () => {
       if (this.state.resultsAssigned){
-    console.log("this.state.test: ",this.state.test);
+   
     this.state.test = [];
     for (var i = 0; i < 10; i++) {
       this.state.test.push(<div>
@@ -100,24 +100,14 @@ class SearchComponent extends React.Component {
           </div>
         );
         }
-    console.log("return this.state.test: ",this.state.test);
+   
     this.setState({
             test: this.state.test
     })
     
   }
-   /*   for (var i = 0; i < 10; i++) {
-      this.state.test.push(<div>
-          <p><h2>title {this.state.title[i]} </h2></p>
-            <p>desc {this.state.desc[i]}</p>
-            
-          </div>
-        );
-        }
-        */
-   // generateOutput();
-      //  console.log("this.state.test",this.state.test);
-    //   return this.state.test;   
+   
+   
     })
       
   }
@@ -133,9 +123,7 @@ class SearchComponent extends React.Component {
   }
   
   componentDidUpdate() {
-  /*  console.log("did update " , this.state.url);
-      console.log("update results: ", this.state.results)
-   */ console.log("update title: ", this.state.title)
+  
   
   }
   
@@ -151,18 +139,6 @@ class SearchComponent extends React.Component {
             <p> <a href={this.state.link[1]} target="_blank">wiki link</a></p>
           </div>
        
-   
-     for (var i = 0; i < 10; i++) {
-      /* wikiList += <div>this.state.title[i]</div>
-     this.state.test.push(<div>
-          <p><h2> title: {this.state.title[i]} </h2></p>
-            <p>desc {this.state.desc[i]}</p>
-            
-          </div>
-          ); 
-          */
-      }
-  //  console.log("wikilist: ", wikiList)
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
@@ -176,25 +152,9 @@ class SearchComponent extends React.Component {
               return output
             }
           )}</p>
-       {/* <p> <h1></h1>{this.state.results.map(
-            function (d, idx) {
-              let output=<div>{d}</div>
-              return output
-            }
-          )}
-        </p>
-        */}
        
-    {/*     <p>{wikiList}</p>
-     <p>{this.state.title.map(
-         function(d, idx) {
-      
-      return <h1>{d}</h1>
-              
-              })
-              }
-        </p> 
-        */}
+       
+    
       </div>
     );
   }
