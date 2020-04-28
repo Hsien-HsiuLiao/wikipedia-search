@@ -41,7 +41,7 @@ class SearchWiki extends React.Component {
   //   url: 'https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search='+event.target.value+'&namespace=0&limit=10&callback=?'  
     })
     */
-  //  console.log('url: ', this.state.url)
+  
     this.getWikiResults();
     //this.props.getWikiResults(this.state.url);
   }
