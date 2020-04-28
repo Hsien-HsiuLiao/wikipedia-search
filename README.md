@@ -1,4 +1,4 @@
-# React Wikipedia search App
+# React Wikipedia article search App
 
 demo https://codepen.io/hsienhsiuliao/pen/gJRxvb
 
