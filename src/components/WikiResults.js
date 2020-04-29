@@ -13,10 +13,17 @@ class WikiResults extends Component {
 */
     render(){
         return(
-            <div>{this.props.searchResults}</div>
+            <div style={resultStyle}>{this.props.searchResults}</div>
         )
     }
 }
+
+const resultStyle = {
+    background: '#111',
+    color: '#f00',
+    textAlign: 'center',
+    padding: '10px'
+  }
 
 //PropTypes
 
