@@ -12,12 +12,23 @@ class App extends React.Component {
       searchResults: 'test'
     }
   }
+
+  
+  appjsFunc =  ()  => {
+    console.log('appjs called')
+   /* setstate = {
+      searchResults: 'function called'
+    }
+    */
+  }
+  
+
   render() {
     return (
       <div className="App">
         <Header />
-        <SearchWiki searchResults={this.state.searchResults} />
-        <WikiResults searchResults={this.state.searchResults}/>
+        <SearchWiki searchResults={this.state.searchResults} appjsFunc={this.appjsFunc} />
+        <WikiResults searchResults={this.state.searchResults} />
       </div>
     );
   }

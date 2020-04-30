@@ -44,6 +44,7 @@ class SearchWiki extends React.Component {
   
     this.getWikiResults();
     //this.props.getWikiResults(this.state.url);
+    this.props.appjsFunc();
   }
 
   

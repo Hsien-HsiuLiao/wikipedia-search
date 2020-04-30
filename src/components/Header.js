@@ -4,10 +4,10 @@ import React, {Component} from 'react';
 const Header = () => {
   return (
   <header style={headerStyle}>
-    <h3>
+    <h4>
       <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" rel="noopener noreferrer">
       Click here for a random Wikipedia article</a>
-    </h3>
+    </h4>
    </header>
   );
 };
