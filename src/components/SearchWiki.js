@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
 import $ from 'jquery';
+import '../App.css';
 
 class SearchWiki extends React.Component {
   constructor(props) {
@@ -75,10 +76,12 @@ class SearchWiki extends React.Component {
     .then( () => {
       console.log("title: ",this.state.link);
       if (this.state.resultsAssigned){
-          this.state.resFormatted = [];
+          this.setState({
+            resFormatted: []
+        }) 
           for (var i = 0; i < 10; i++) {
               this.state.resFormatted.push(
-                  <div>
+                  <div className='panel panel-default' style={{color:'#000'}}>
                       <p>
                         <h3>
                           <a href={ this.state.link[i] } target="_blank" rel="noopener noreferrer"> 
@@ -123,7 +126,7 @@ class SearchWiki extends React.Component {
           
         {this.state.resFormatted.map(
               function (d, idx) {
-                let output=<div>{d}</div>
+                let output=<div  >{d}</div>
                 return output
               }
             )}

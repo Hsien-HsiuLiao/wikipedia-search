@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.panel-body:hover{background-color:#f5f5f5}
+
+.panel{
+  width: 1000px;
+  margin:auto;
+}
